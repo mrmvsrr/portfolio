@@ -8,70 +8,80 @@
     <meta name="keywords" content="mrmvsrr, 1C, html, css, javascript">
     <meta name="description" content="Мельгунов Василий. Портфолио">
     <title>Портфолио. Мельгунов В.С.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="img/avatar.jpg" alt="Аватарка" width="200">
-    <h1>Василий Мельгунов</h1>
-    <p>Программист на платформе <strong>1С:Предприятие</strong>. Опыт работы: <strong>15 лет</strong>.</p>
-    <br>
-    <p>Что то обо мне. <em>Здесь будет описание моих увлечений</em>.</p>
+    <div class="container">
+        <div class="info">
+            <img class="avatar" src="img/avatar.jpg" alt="Аватарка">
+            <div class="info-text">
+                <h1>Василий Мельгунов</h1>
+                <p class="bold">Программист на платформе 1С:Предприятие. Опыт работы: 15 лет.</p>
 
-    <h3>Контакты</h3>
-    <a href="https://t.me/mrmvsrr" target="_blank">Телеграмм</a> | <a href="https://vk.com" target="_blank">ВК</a>
-
-    <hr>
-
-    <h2>Опыт работы</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tboby>
-            <tr>
-                <td>Компания 1</td>
-                <td>Программист</td>
-                <td>2004-2006</td>
-            </tr>
-            <tr>
-                <td>Компания 2</td>
-                <td>Программист</td>
-                <td>2006-настоящее время</td>
-            </tr>
-        </tboby>
-    </table>
-
-
-    <h2>Проекты</h2>
-    <ol>
-        <li>Проект 1</li>
-        <li>Проект 2</li>
-        <li>Проект 3</li>
-        <li>Проект 4</li>
-        <li>Проект 5</li>
-    </ol>
-
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
-            <label for="yourname">Ваше имя</label>
-            <input type="text" id="yourname" placeholder="Введите имя" name="yourname">
+                <h3>Контакты</h3>
+                <a href="https://t.me/mrmvsrr" class="btn" target="_blank">Телеграмм</a> | <a href="https://vk.com" class="btn" target="_blank">ВКонтакте</a>
+            </div>
         </div>
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email" name="email">
-        </div>
-        <div>
-            <label for="message">Ваше сообщение:</label><br>
-            <textarea name="message" id="message" placeholder="Введите сообщение..." cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit">Отправить!</button>
-    </form>
 
+        <div class="card bg-lightblue">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                <thead class="bold">
+                    <tr>
+                        <th>Компания</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tboby>
+                    <tr>
+                        <td>Компания 1</td>
+                        <td>Программист</td>
+                        <td>2004-2006</td>
+                    </tr>
+                    <tr>
+                        <td>Компания 2</td>
+                        <td>Программист</td>
+                        <td>2006-настоящее время</td>
+                    </tr>
+                </tboby>
+            </table>
+        </div>
+
+
+        <div class="card bg-lightgreen">
+            <h2>Проекты</h2>
+            <ol class="list">
+                <li>Проект 1</li>
+                <li>Проект 2</li>
+                <li>Проект 3</li>
+                <li>Проект 4</li>
+                <li>Проект 5</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h2>Связаться со мной</h2>
+            <form class="form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="yourname">Ваше имя</label>
+                        <input type="text" id="yourname" placeholder="Введите имя" name="yourname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email" name="email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea name="message" id="message" placeholder="Введите сообщение..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn">Отправить!</button>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
